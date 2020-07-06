@@ -1,0 +1,57 @@
+# Deployment config
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: app
+  labels:
+    app: app
+spec:
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      labels:
+        app: app
+        tier: app
+    spec:
+      containers:
+      - image: 127.0.0.1:30400/app:latest
+        name: app
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 8000
+          name: app
+---
+#service config
+apiVersion: v1
+kind: Service
+metadata:
+  name: app
+  labels:
+    app: app
+spec:
+  ports:
+    - port: 8000
+      targetPort: 8000
+  selector:
+    app: app
+    tier: app
+  type: NodePort
+---
+# ingress config
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+ name: app
+spec:
+  backend:
+    serviceName: app
+    servicePort: 8000
+  rules:
+  - host: app.192.168.99.100.xip.io
+    http:
+      paths:
+      - path: /
+        backend:
+          serviceName: app
+          servicePort: 8000
