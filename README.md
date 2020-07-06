@@ -319,19 +319,3 @@ minikube stop; minikube delete; sudo rm -rf ~/.minikube; sudo rm -rf ~/.kub
 ##Demo video 
 Coming soon
 
-```text
-Dear #linkedin connections, 
-
-I want to share with you my newest accomplished project. My goal is to show how to set up a fully-containerized #Django web application in #kubernetes with a #CI/CD #pipline to manage the deployements.
-I totally used #DevOps Opensource tools ( #Git, #Github, #Jenkins, #Docker, #Kubernetes, #Django, #PostgreSQL, etc). 
-
-In the following link you will find the source code of my project on github.
-<<< ADD the link>>>>
-
-A simple thumbs up or comment or even share would help me to hear more tips and ideas to improve this work. 
-
-For more information, don't hesitate to contact me.
-
-<<< ADD the image >>>
-
-```
