@@ -3,7 +3,7 @@ My goal is to show how to set up a fully-containerized Django web application in
 
 ## Architecture diagram
  Check out the architecture diagram below to see what you’ll be building.
- ![CICD Architecture](CICD Architecture.png)
+ ![CICD Architecture](https://github.com/Radhouene1/R_BHA_DEVOPS_CICD/blob/master/CICD%20Architecture.png)
 ## Requirement
 We will run this tutorial localy in Minikue and not on the cloud. You need a computer running an version of linux (In my case, I used ubuntu 16.04 lts ). Minimally, it should have 8 GB of RAM
 
