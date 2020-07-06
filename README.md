@@ -53,7 +53,7 @@ curl -LO https://storage.googleapis.com/kubernetes-release/release/v1.16.8/bin/l
 chmod +x ./kubectl
 sudo mv ./kubectl /usr/local/bin/kubectl
 ```
-###### Kubectl
+###### minikube
 ```console
 curl -Lo minikube https://storage.googleapis.com/minikube/v1.3.1/latest/minikube-linux-amd64 && chmod +x minikube
 sudo mv -v minikube /usr/local/bin
